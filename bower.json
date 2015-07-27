@@ -1,0 +1,31 @@
+{
+  "name": "js-object-keys-mapper",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Andrea Stronati",
+      "email": "astronati@vendini.com"
+    }
+  ],
+  "description": "Changes object keys maintaining the same values using 'read()' and 'write()' methods or creates new keys manipulating object data.",
+  "keywords": [
+    "mapper",
+    "keys mapper",
+    "object keys mapper"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".gitignore",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "main": [
+    "dist/object-keys-mapper.min.js",
+    "src/object-keys-mapper.js"
+  ]
+}
