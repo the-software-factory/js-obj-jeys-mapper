@@ -2,6 +2,9 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
+        jshint: {
+            all: ['Gruntfile.js', 'src/**/*.js', 'test/*.js', 'test/src/**/*.js']
+        },
         uglify: {
             dist: {
                 files: {
@@ -17,8 +20,9 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['uglify']);
+    grunt.registerTask('default', ['jshint', 'uglify']);
 };

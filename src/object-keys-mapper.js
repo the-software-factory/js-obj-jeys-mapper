@@ -10,11 +10,11 @@ var ObjectKeysMapper = function(mask) {
         throw new Error('Missing "mask" parameter');
     }
 
-    if (mask
-            && (typeof mask !== 'object'
-            || (typeof mask === 'object' &&
-            (!mask.write || !mask.read)
-            || (typeof mask.write !== 'object' || typeof mask.read !== 'object')))) {
+    if (mask &&
+            (typeof mask !== 'object' ||
+            (typeof mask === 'object' &&
+            (!mask.write || !mask.read) ||
+            (typeof mask.write !== 'object' || typeof mask.read !== 'object')))) {
         throw new Error('Wrong "mask" parameter');
     }
 
@@ -118,11 +118,9 @@ var ObjectKeysMapper = function(mask) {
             switch (action) {
                 case me.WRITE_ACTION:
                     return me.write(object);
-                    break;
                 case me.READ_ACTION:
                     return me.read(object);
-                    break;
             }
         });
-    }
+    };
 };

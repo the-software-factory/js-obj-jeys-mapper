@@ -1,5 +1,5 @@
 {
-  "name": "js-object-keys-mapper-tests",
+  "name": "js-object-keys-mapper-test",
   "devDependencies": {
     "karma": "",
     "karma-chrome-launcher": "0.1.5",

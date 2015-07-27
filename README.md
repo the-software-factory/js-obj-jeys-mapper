@@ -60,11 +60,13 @@ tests/
 ### Grunt Tasks
 Here is a list of grunt `tasks` => `actions` mappings, see below for a deeper explanation of the actions.
 
-| *Grunt task* | *uglify* | *watch* |
-|--------------|:--------:|:-------:|
-| grunt        |     *    |    *    |
+| *Grunt task* | *jshint* | *uglify* | *watch* |
+|--------------|:--------:|:--------:|:-------:|
+| grunt        |     *    |     *    |         |
+| grunt watch  |          |          |    *    |
 
-* *uglify*: Creates the final \*.min.js for the theme.
+* *jshint*: Validate files with JSHint.
+* *uglify*: Create the final \*.min.js.
 * *watch*: Run `default` task when `src` files are added, changed or deleted.
 
 ## Tests

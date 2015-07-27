@@ -9,7 +9,7 @@ describe("JS Object Keys Mapper", function() {
             name: 'name',
             label: 'text',
             renderer: function(obj) {
-                return obj['text'].replace('text', 'gaaaas');
+                return obj.text.replace('text', 'gaaaas');
             },
             test: 'renderers'
         },
@@ -134,16 +134,16 @@ describe("JS Object Keys Mapper", function() {
     });
 
     it("testing JS Object Keys Mapper constructor.", function() {
-        var test = function() { return new ObjectKeysMapper('abc') };
+        var test = function() { return new ObjectKeysMapper('abc'); };
         expect(test).toThrow();
 
-        var test = function() { return new ObjectKeysMapper({}) };
+        test = function() { return new ObjectKeysMapper({}); };
         expect(test).toThrow();
 
-        var test = function() { return new ObjectKeysMapper({ read: 'abc', write: true }) };
+        test = function() { return new ObjectKeysMapper({ read: 'abc', write: true }); };
         expect(test).toThrow();
 
-        var test = function() { return new ObjectKeysMapper({ read: {}, write: {} }) };
+        test = function() { return new ObjectKeysMapper({ read: {}, write: {} }); };
         expect(test).not.toThrow();
     });
 
