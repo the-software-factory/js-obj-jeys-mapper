@@ -70,4 +70,4 @@ Here is a list of grunt `tasks` => `actions` mappings, see below for a deeper ex
 * *watch*: Run `default` task when `src` files are added, changed or deleted.
 
 ## Tests
-Take a look at [`tests/README.md`](tests/README.md) for more details.
+Take a look at [`test/README.md`](test/README.md) for more details.
