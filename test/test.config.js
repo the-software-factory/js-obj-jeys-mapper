@@ -6,7 +6,7 @@ module.exports = function (config) {
             'dist/object-keys-mapper.min.js',
 
             // Unit tests
-            'tests/src/*.test.js'
+            'test/src/*.test.js'
         ],
 
 
@@ -36,7 +36,8 @@ module.exports = function (config) {
 
         // Junit reporter configuration
         junitReporter: {
-            outputFile: 'tests/results.xml'
+            outputDir: 'test',
+            outputFile: 'results.xml'
         },
 
 
