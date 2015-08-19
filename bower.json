@@ -7,6 +7,12 @@
       "email": "astronati@vendini.com"
     }
   ],
+  "contributors": [
+    {
+      "name": "Alexei Liulin",
+      "email": "codwizard@gmail.com"
+    }
+  ],
   "description": "Changes object keys maintaining the same values using 'read()' and 'write()' methods or creates new keys manipulating object data.",
   "keywords": [
     "mapper",

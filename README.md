@@ -1,6 +1,13 @@
 # JS Object Keys Mapper
 Changes object keys maintaining the same values using `read()` and `write()` methods or creates new keys manipulating object data.
 
+## Installation
+You'll need [bower](http://bower.io/) to install JS Object Keys Mapper library and its dependencies
+Install the library and save it as a dependency in your project:
+```sh
+$ bower --save install js-object-keys-mapper
+```
+
 ## Usage
 Let's suppose to have the following object:
 ```js
@@ -36,25 +43,6 @@ var mapper = new ObjectKeysMapper(mask);
 var result = mapper.read(obj1);
 ```
 
-## Installation
-
-### Development
-This project requires [node](https://nodejs.org/) for the development installation so you can
-install client-side dependencies, build it and test it.
-
-Please run following commands to install all dependencies:
-```sh
-$ npm install
-$ ./node_modules/bower/bin/bower install
-```
-
-### Deploy
-This project requires [bower](http://bower.io/) for the deploy installation so you can install client-side dependencies
-Please run following commands to install the dependencies:
-```sh
-$ bower install
-```
-
 ## Development
 The project has the following structure:
 ```
@@ -68,21 +56,34 @@ tests/
 ...
 ```
 
+### Installation
+This project requires [node](https://nodejs.org/) for the development installation so you can
+install its dependencies, build it and test it.
+
+Please run following commands to install all dependencies:
+```sh
+$ npm install
+```
+
 ### Grunt Tasks
 Here is a list of grunt `tasks` => `actions` mappings, see below for a deeper explanation of the actions.
 
-|   *Grunt task*  | *jshint* | *uglify* | *watch* |  *conventionalChangelog* | *changelogCommit* |
-|-----------------|:--------:|:--------:|:-------:|:------------------------:|:-----------------:|
-| grunt           |     *    |     *    |         |                          |                   |
-| grunt watch     |          |          |    *    |                          |                   |
-| grunt changelog |          |          |         |             *            |          *        |
+|   *Grunt task*    | *jshint* | *uglify* | *usebanner* | *watch* | *emptyTheChangelog* |*conventionalChangelog* | *changelogCommit* |
+|-------------------|:--------:|:--------:|:-----------:|:-------:|:-------------------:|:----------------------:|:-----------------:|
+|      grunt        |    *     |    *     |      *      |         |                    |                         |                   |
+| grunt development |          |          |             |    *    |                    |                         |                   |
+| grunt changelog   |          |          |             |         |         *          |          *              |         *         |
 
 * *jshint*: Validate files with JSHint.
 * *uglify*: Create the final \*.min.js.
-* *watch*: Run `default` task when `src` files are added, changed or deleted.
-* *conventionalChangelog*: Generates a CHANGELOG.md file from the git log
-* *changelogCommit*: Prepares a new git commit with the CHANGELOG.md file
-
+* *usebanner*: Prepends a banner to the minified file
+* *watch*: Run default task when src or test files are added, changed or deleted.
+* *emptyTheChangelog*: Truncates the CHANGELOG.md file as conventionalChangelog task will append fully regenerated changelog
+* *conventionalChangelog*: Appends Markdown-formatted changelog history to CHANGELOG.md
+* *changelogCommit*: Prepares a new commit with updated CHANGELOG.md and commit message "CHANGELOG.md Updated"
 
 ## Tests
 Take a look at [`test/README.md`](test/README.md) for more details.
+
+## Contributing
+Take a look at [`CONTRIBUTING.md`](CONTRIBUTING.md) for more details.

@@ -33,5 +33,5 @@ Follow these steps to run the tests suite:
 For example:
 ```sh
 $ cd test
-$ ./node_modules/karma/bin/karma start test.config.js
+$ ./node_modules/karma/bin/karma start karma.config.js
 ```

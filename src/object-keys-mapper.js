@@ -30,6 +30,7 @@ var ObjectKeysMapper = function(mask) {
      *     ...
      *   }
      * }
+     *
      * @type {Object}
      * @private
      */
