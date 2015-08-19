@@ -5,7 +5,7 @@
 ### Features
 
 * Automatic changelog generation task added, README.md updated, CONTRIBUTION.md added, test fixed [db59877](https://github.com/the-software-factory/js-object-keys-mapper/commit/db59877925363818175871f3b36571bd92862738) 
-* README.md updated, Grunt tasks updated, package.json updated, karma config regenerated [2ede9b3](https://github.com/the-software-factory/js-object-keys-mapper/commit/2ede9b3f9b6e5c8dfc8659234364afdc5ec04eb9) 
+* README.md updated, Grunt tasks updated, package.json updated, karma config regenerated [3b1d800](https://github.com/the-software-factory/js-object-keys-mapper/commit/3b1d800f084ac65056ea88dba7a413a05c9a8444) 
 
 
 
