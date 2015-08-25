@@ -68,11 +68,11 @@ $ npm install
 ### Grunt Tasks
 Here is a list of grunt `tasks` => `actions` mappings, see below for a deeper explanation of the actions.
 
-|   *Grunt task*    | *jshint* | *uglify* | *usebanner* | *watch* | *emptyTheChangelog* |*conventionalChangelog* | *changelogCommit* |
+|   *Grunt task*    | *jshint* | *uglify* | *usebanner* | *watch* | *emptyTheChangelog* |*emptyChangelog* | *changelogCommit* |
 |-------------------|:--------:|:--------:|:-----------:|:-------:|:-------------------:|:----------------------:|:-----------------:|
-|      grunt        |    *     |    *     |      *      |         |                    |                         |                   |
-| grunt development |          |          |             |    *    |                    |                         |                   |
-| grunt changelog   |          |          |             |         |         *          |          *              |         *         |
+|      grunt        |    *     |    *     |      *      |         |                     |                        |                   |
+| grunt development |          |          |             |    *    |                     |                        |                   |
+| grunt changelog   |          |          |             |         |         *           |         *              |         *         |
 
 * *jshint*: Validate files with JSHint.
 * *uglify*: Create the final \*.min.js.
