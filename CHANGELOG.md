@@ -7,6 +7,7 @@
 * Automatic changelog generation task added, README.md updated, CONTRIBUTION.md added, test fixed db59877
 * Grunt changelog task modified; README modified 05ef691
 * README.md updated, Grunt tasks updated, package.json updated, karma config regenerated 3b1d800
+* Travis badge prepended to the README.md 6550d80
 * Travis CI configuration file added 20a24e9
 
 
