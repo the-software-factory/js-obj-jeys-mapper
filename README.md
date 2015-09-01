@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/the-software-factory/js-object-keys-mapper.svg?branch=master)](https://travis-ci.org/the-software-factory/js-object-keys-mapper)
+
 # JS Object Keys Mapper
 Changes object keys maintaining the same values using `read()` and `write()` methods or creates new keys manipulating object data.
 
@@ -68,7 +70,7 @@ $ npm install
 ### Grunt Tasks
 Here is a list of grunt `tasks` => `actions` mappings, see below for a deeper explanation of the actions.
 
-|   *Grunt task*    | *jshint* | *uglify* | *usebanner* | *watch* | *emptyTheChangelog* |*emptyChangelog* | *changelogCommit* |
+|   *Grunt task*    | *jshint* | *uglify* | *usebanner* | *watch* | *emptyTheChangelog* |*conventionalChangelog* | *changelogCommit* |
 |-------------------|:--------:|:--------:|:-----------:|:-------:|:-------------------:|:----------------------:|:-----------------:|
 |      grunt        |    *     |    *     |      *      |         |                     |                        |                   |
 | grunt development |          |          |             |    *    |                     |                        |                   |
