@@ -49,13 +49,12 @@ var result = mapper.read(obj1);
 The project has the following structure:
 ```
 dist/
-	*.min.js // The minified and uglified version of the component.
+		*.min.js // The uglified version of the component.
 src/
-    *.js // The source file
-tests/
-    ... // Contains all tests and all needed file to set up a tests environment.
-    *.test.js // All tests need to have the "test" suffix before the extension.
-...
+		*.js // The source file
+test/
+		src/*.test.js // Tests
+		...						// Task runner configuration file and test dependencies
 ```
 
 ### Installation

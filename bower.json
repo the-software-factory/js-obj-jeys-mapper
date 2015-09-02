@@ -21,12 +21,14 @@
   ],
   "license": "MIT",
   "ignore": [
+    ".*",
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests",
-    ".gitignore",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "README.md",
     "Gruntfile.js",
     "package.json"
   ],
